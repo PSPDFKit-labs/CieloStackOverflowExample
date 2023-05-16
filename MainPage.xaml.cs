@@ -39,10 +39,10 @@ namespace CieloStackOverflowExample
                 Button_OpenPDF.IsEnabled = true;
             };
 
-            SetToolbars();
+            SetToolbarItems();
         }
         
-        private async void SetToolbars() 
+        private async void SetToolbarItems() 
         {
             var toolbarItems = PdfView.GetToolbarItems();
             var idxPan = toolbarItems.IndexOf(new PanToolbarItem());

@@ -35,11 +35,11 @@ namespace CieloStackOverflowExample
             // This handler is invoked once the `PdfView` has been initialized, and then the `PdfView.Controller` can be used.
             PdfView.InitializationCompletedHandler += delegate (PdfView sender, Document args)
             {
+                SetToolbarItems();
+
                 // Now that the `PdfView` is ready, enable the button for opening a file.
                 Button_OpenPDF.IsEnabled = true;
             };
-
-            SetToolbarItems();
         }
         
         private async void SetToolbarItems() 
